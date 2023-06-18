@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="gray">#EAEAEA</color>
+
+    <color name="onboard_1">#FFFBEF</color>
+    <color name="onboard_2">#EEFAFF</color>
+    <color name="onboard_3">#FAF5FF</color>
+
+    <color name="primary_500">#0B4566</color>
+    <color name="secondary">#079BA9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_navigation">#888898</color>
+    <color name="gray_text">#888898</color>
+    <color name="gray_1">#393953</color>
+    <color name="hint_color">#A6A6B2</color>
+    <color name="red">#E82C59</color>
+    <color name="subtext_color">#616075</color>
+</resources>

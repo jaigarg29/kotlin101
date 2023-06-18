@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/text_note"
+        android:icon="@drawable/pencil"
+        android:title="Text Note" />
+    <item
+        android:id="@+id/image_group"
+        android:icon="@drawable/camera"
+        android:title="Image Group" />
+</menu>

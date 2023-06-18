@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.topic_details.TopicDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tine_line_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back_button"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/arrow_left_line" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/add_button"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="20dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/add_black" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="24sp"
+            app:fontFamily="@font/poppins_semi_bold"
+            tools:text="British Raj" />
+
+        <LinearLayout
+            android:id="@+id/time_line_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <View
+                android:id="@+id/circle_1"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/circle_for_timeline" />
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#E3E5E5" />
+
+            <View
+                android:id="@+id/circle_2"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/circle_for_timeline" />
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#E3E5E5" />
+
+            <View
+                android:id="@+id/circle_3"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/circle_for_timeline" />
+
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#E3E5E5" />
+
+            <View
+                android:id="@+id/circle_4"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/circle_for_timeline" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_line_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/date_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="4/10" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="7/10" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/date_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="14/10" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/date_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="24/10" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topic_detail_illustration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    app:srcCompat="@drawable/topics_img" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/topics_illustration_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:inputType="textMultiLine"
+                    android:text="All your Notes will appear here"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/topics_illustration_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="60dp"
+                    android:gravity="center_horizontal"
+                    android:text="Adding your notes here will let you revise the topic quick &amp; easy"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/text_note_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_note_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/poppins_semi_bold"
+                    app:layout_constraintBottom_toTopOf="@id/horizontal_line"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="History of the British Raj" />
+
+                <View
+                    android:id="@+id/horizontal_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toTopOf="@id/text_note_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_note_heading" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/edit_note"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toTopOf="@id/horizontal_line"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/vert_dots" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_note_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:ellipsize="end"
+                    android:maxLines="7"
+                    android:textColor="@color/subtext_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/horizontal_line"
+                    tools:text="@string/dummy_content" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_note_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_note_container">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/image_group_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/poppins_semi_bold"
+                    app:layout_constraintBottom_toTopOf="@id/horizontal_line_1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="History of the British Raj" />
+
+                <View
+                    android:id="@+id/horizontal_line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toTopOf="@id/images_container"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/image_group_name" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/edit_images"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toTopOf="@id/horizontal_line_1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/vert_dots" />
+
+                <LinearLayout
+                    android:id="@+id/images_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/horizontal_line_1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/image_1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/dummy_image" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/image_2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/dummy_image" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/image_3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/dummy_image" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/image_4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/dummy_image" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/horizontal_rule"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mark_revised"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Mark revised"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

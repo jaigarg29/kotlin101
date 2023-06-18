@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Calendar"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="28dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvDate"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvDate"
+            app:layout_constraintTop_toTopOf="@id/tvDate"
+            app:srcCompat="@drawable/chevron_left" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="SELECT A DATE"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/btnLeft"
+            app:layout_constraintRight_toLeftOf="@id/btnRight"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnRight"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="28dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDate"
+            app:layout_constraintLeft_toRightOf="@id/tvDate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvDate"
+            app:srcCompat="@drawable/chevron_right" />
+
+        <com.kizitonwose.calendar.view.WeekCalendarView
+            android:id="@+id/exSevenCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            app:cv_daySize="seventhWidth"
+            app:cv_dayViewResource="@layout/example_7_calendar_day"
+            app:cv_orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_illustration_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/calendar_image"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/onboard_3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/calendar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:text="No Topics Schedules for this day"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/calendar_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="See your topics to revise date wise"
+            android:textColor="@color/gray_text"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topics_date_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+
+</LinearLayout>

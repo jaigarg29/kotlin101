@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="popup_width">220dp</dimen>
+    <dimen name="popup_vertical_offset">-15dp</dimen>
+    <dimen name="popup_horizontal_offset">-45dp</dimen>
+    <dimen name="image_grid_spacing">10dp</dimen>
+    <dimen name="vertical_offset">20dp</dimen>
+    <dimen name="chip_corner_Radius">20dp</dimen>
+</resources>
