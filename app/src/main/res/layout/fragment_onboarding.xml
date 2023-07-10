@@ -22,7 +22,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_medium"
             android:gravity="left"
-            android:text="Magical \nMemory ?"
+            android:text="Memorize Anything Permanently"
             android:textColor="@color/black"
             android:textSize="40sp" />
 
@@ -33,7 +33,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:gravity="left"
-            android:text="What if you had the power to remember anything you learn for however long you want to?"
+            android:text="That is, you learn it once and remember forever."
             android:textColor="@color/black"
             android:textSize="16sp" />
 

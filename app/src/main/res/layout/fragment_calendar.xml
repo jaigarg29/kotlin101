@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semi_bold"
             android:gravity="center"
-            android:text="No Topics Schedules for this day"
+            android:text="No Topic scheduled for this day"
             android:textColor="@color/black"
             android:textSize="16sp" />
 

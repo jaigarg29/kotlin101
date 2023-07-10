@@ -72,14 +72,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="Invite your friends &amp;\nEarn an Additional Topic"
+                android:text="Invite Your Friends &amp; Earn 5 Free Topics Per Referral"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Copy your code, share it with your friends"
+                android:text="Copy this code &amp; share it with your friends"
                 android:textColor="@color/gray_text"
                 android:textSize="12sp" />
 
@@ -286,7 +286,7 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:layout_marginStart="20dp"
-                        app:srcCompat="@drawable/ellipse" />
+                        app:srcCompat="@drawable/invite_friends" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -297,17 +297,17 @@
                         android:gravity="center_vertical"
                         android:orientation="vertical">
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Invite Friends"
-                            android:textColor="@color/black" />
+<!--                        <androidx.appcompat.widget.AppCompatTextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins_semi_bold"-->
+<!--                            android:text="Invite Friends"-->
+<!--                            android:textColor="@color/black" />-->
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Invite your friends to register on the App"
+                            android:text="Share the referral code with your friends."
                             android:textColor="@color/black" />
 
                     </LinearLayout>
@@ -324,7 +324,7 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:layout_marginStart="20dp"
-                        app:srcCompat="@drawable/ellipse" />
+                        app:srcCompat="@drawable/friend_registers" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -335,17 +335,17 @@
                         android:gravity="center_vertical"
                         android:orientation="vertical">
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Friend Registers on App"
-                            android:textColor="@color/black" />
+<!--                        <androidx.appcompat.widget.AppCompatTextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins_semi_bold"-->
+<!--                            android:text="Friend Registers on App"-->
+<!--                            android:textColor="@color/black" />-->
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Your friend will also get coins "
+                            android:text="Friend registers on the app using your referral code."
                             android:textColor="@color/black" />
 
                     </LinearLayout>
@@ -363,7 +363,7 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:layout_marginStart="20dp"
-                        app:srcCompat="@drawable/ellipse" />
+                        app:srcCompat="@drawable/receive_additional" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -374,17 +374,17 @@
                         android:gravity="center_vertical"
                         android:orientation="vertical">
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Receive Additional Topics"
-                            android:textColor="@color/black" />
+<!--                        <androidx.appcompat.widget.AppCompatTextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins_semi_bold"-->
+<!--                            android:text="Receive Additional Topics"-->
+<!--                            android:textColor="@color/black" />-->
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="You get an additional topics for each refferal"
+                            android:text="You get 5 additional free topics upon each successful referral."
                             android:textColor="@color/black" />
 
                     </LinearLayout>

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.Observer
 import com.android.billingclient.api.AcknowledgePurchaseParams
 import com.android.billingclient.api.BillingClient
@@ -23,6 +24,7 @@ import com.app.rivisio.R
 import com.app.rivisio.databinding.ActivitySubscribeBinding
 import com.app.rivisio.ui.base.BaseActivity
 import com.app.rivisio.ui.base.BaseViewModel
+import com.app.rivisio.ui.refer.ReferActivity
 import com.google.gson.JsonParser
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -142,8 +144,13 @@ class SubscribeActivity : BaseActivity(), ProductDetailsResponseListener, Purcha
                 this@SubscribeActivity
             )
         }
-    }
 
+        binding.referOnSub.setOnClickListener {
+            val intent = Intent(this@SubscribeActivity, ReferActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
+    }
     override fun onProductDetailsResponse(
         billingResult: BillingResult,
         productDetailsList: MutableList<ProductDetails>

@@ -210,4 +210,7 @@ class Repository constructor(
     suspend fun saveSubscription(
         purchase: Purchase
     ) = apiHelper.saveSubscription(purchase)
+
+    suspend fun deleteTopic(topicId: Int, token: String?, userId: Int) = apiHelper.deleteTopic(topicId, token, userId)
+
 }

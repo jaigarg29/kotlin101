@@ -39,7 +39,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/poppins_semi_bold"
-            android:text="Login to start your"
+            android:text="Sign Up"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -49,7 +49,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="26dp"
-            android:text="Some Supporting Tagline can be placed here. That Just sounds Sassy"
+            android:text="Join the Learning Revolution"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
@@ -74,7 +74,7 @@
             android:layout_marginTop="26dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/poppins_semi_bold"
-            android:text="Signup with Google to Continue"
+            android:text="Sign up with Google to continue"
             android:textColor="@color/black"
             android:textSize="20sp" />
 

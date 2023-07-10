@@ -65,7 +65,7 @@ class ViewImageNoteActivity : BaseActivity(), ViewImageAdapter.Callback {
             when (it) {
                 is NetworkResult.Success -> {
                     hideLoading()
-                    showMessage("Network call is successful")
+//                    showMessage("Network call is successful")
                     try {
 
                         topicFromServer = Gson().fromJson(

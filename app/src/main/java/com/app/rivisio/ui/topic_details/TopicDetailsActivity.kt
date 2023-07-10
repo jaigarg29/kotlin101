@@ -108,7 +108,7 @@ class TopicDetailsActivity : BaseActivity() {
             when (it) {
                 is NetworkResult.Success -> {
                     hideLoading()
-                    showMessage("Network call is successful")
+//                    showMessage("Network call is successful")
                     try {
                         topicFromServer = Gson().fromJson(
                             it.data.asJsonObject,
@@ -362,7 +362,7 @@ class TopicDetailsActivity : BaseActivity() {
         binding.editNote.setOnClickListener {
 
             var popup: ListPopupWindow? = null
-
+            val context: Context = this
             val adapter = TextNoteOptionsAdapter(arrayListOf("Edit", "Delete"))
             val listener = AdapterView.OnItemClickListener { _, _, position, _ ->
                 if (position == 0) {
@@ -390,7 +390,7 @@ class TopicDetailsActivity : BaseActivity() {
                 popup?.dismiss()
             }
 
-            popup = getPopupMenu(this@TopicDetailsActivity, it, adapter, listener, 0, 0)
+            popup = getPopupMenu(context, it, adapter, listener, 0, 0)
 
             popup.show()
 

@@ -179,9 +179,9 @@ class HomeFragment : BaseFragment(), TopicsAdapter.Callback {
                             binding.homeTabs.visibility = View.GONE
                             binding.homeIllustrationContainer.visibility = View.VISIBLE
                             binding.homeIllustration.setImageResource(R.drawable.start_journey)
-                            binding.homeIllustrationMessage.text = "Start Your Journey"
+                            binding.homeIllustrationMessage.text = "Add Topics to Revise"
                             binding.homeIllustrationText.text =
-                                "Every big step start with small step. Add your first topic and start your journey!"
+                                "Our revision cycle helps you remember anything permanently."
                         } else {
                             binding.homeTabs.visibility = View.VISIBLE
                             homeTabs.setTabClickListener { v ->
@@ -296,9 +296,9 @@ class HomeFragment : BaseFragment(), TopicsAdapter.Callback {
         binding.homeTabs.makeVisible()
         binding.homeIllustrationContainer.makeVisible()
         binding.homeIllustration.setImageResource(R.drawable.meditation)
-        binding.homeIllustrationMessage.text = "No topics here"
+        binding.homeIllustrationMessage.text = "No Topics to Revise"
         binding.homeIllustrationText.text =
-            "You have revised all the topics, add new to create more."
+            "Our revision cycle helps you remember anything permanently."
     }
 
     private fun showTopicsList(topics: ArrayList<TopicFromServer>, isTodaysTopic: Boolean = false) {

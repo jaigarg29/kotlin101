@@ -52,7 +52,8 @@ class ReferActivity : BaseActivity() {
         binding.faqLayout.settings.builtInZoomControls = true
         binding.faqLayout.settings.useWideViewPort = true
         binding.faqLayout.settings.loadWithOverviewMode = true
-        binding.faqLayout.loadUrl("https://thorn-jupiter-cc6.notion.site/FAQs-Revu-513498a6de624decab58c5434676dc65")
+//        binding.faqLayout.loadUrl("https://thorn-jupiter-cc6.notion.site/FAQs-Revu-513498a6de624decab58c5434676dc65")
+        binding.faqLayout.loadUrl("https://snapdragon-consonant-027.notion.site/FAQs-Revu-879b2cc69b3b45dd9e16158c7ca11e83?pvs=4")
 
         binding.tabLayout.addOnTabSelectedListener(object :
             TabLayout.OnTabSelectedListener {

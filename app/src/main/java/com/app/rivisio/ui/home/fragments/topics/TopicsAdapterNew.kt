@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.app.rivisio.R
@@ -19,11 +20,12 @@ import java.time.format.DateTimeFormatter
 class TopicsAdapterNew(var topics: ArrayList<TopicFromServer> = arrayListOf()) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    var topicsFiltered: ArrayList<TopicFromServer> = ArrayList()
+    private var topicsFiltered: ArrayList<TopicFromServer> = ArrayList()
 
     interface Callback {
         fun onTopicClick(topicFromServer: TopicFromServer)
         fun onTopicReviseButtonClick(topicFromServer: TopicFromServer)
+        fun onMenuIconClick(anchorView: AppCompatImageView, position: Int, topicFromServer: TopicFromServer)
     }
 
     private lateinit var callback: Callback
@@ -55,6 +57,13 @@ class TopicsAdapterNew(var topics: ArrayList<TopicFromServer> = arrayListOf()) :
             }
         }
 
+        topicViewHolder.menuIcon.setOnClickListener {
+            if (callback != null) {
+                val position = topicViewHolder.bindingAdapterPosition
+                callback.onMenuIconClick(topicViewHolder.menuIcon, position, topicsFiltered[position])
+            }
+        }
+
         return topicViewHolder
     }
 
@@ -66,9 +75,10 @@ class TopicsAdapterNew(var topics: ArrayList<TopicFromServer> = arrayListOf()) :
 
     inner class TopicViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+        val menuIcon: AppCompatImageView = itemView.findViewById(R.id.menu_icon)
+
         fun onBind(topicFromServer: TopicFromServer) {
             itemView.findViewById<AppCompatTextView>(R.id.topic_name).text = topicFromServer.name
-
             itemView.findViewById<ChipGroup>(R.id.selected_tags).removeAllViews()
 
             if (topicFromServer.tagsList != null) {
@@ -76,6 +86,7 @@ class TopicsAdapterNew(var topics: ArrayList<TopicFromServer> = arrayListOf()) :
                     addTagChip(it)
                 }
             }
+
 
             val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
             val dateTime = LocalDateTime.parse(topicFromServer.studiedOn, formatter)
@@ -121,4 +132,5 @@ class TopicsAdapterNew(var topics: ArrayList<TopicFromServer> = arrayListOf()) :
 
         notifyDataSetChanged()
     }
+
 }

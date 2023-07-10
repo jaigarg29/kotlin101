@@ -18,24 +18,24 @@ class OnboardingAdapter(activity: FragmentActivity) : FragmentStateAdapter(activ
         fragment = when (position) {
             0 -> {
                 OnboardingFragment.newInstance(
-                    "Magical \nMemory ?",
-                    "What if you had the power to remember anything you learn for however long you want to?",
+                    "Memorize Anything Permanently",
+                    "That is, you learn it once and remember forever.",
                     R.drawable.onboard_1,
                     R.color.onboard_1
                 )
             }
             1 -> {
                 OnboardingFragment.newInstance(
-                    "Reality \nCheck ?",
-                    "Definitely Yes Does it require a super memory? Strictly No",
+                    "Is it really possible?",
+                    "It is possible by using Spaced Repetition method, empirically established by German scientist Hermann Ebbinghaus.",
                     R.drawable.onboard_2,
                     R.color.onboard_2
                 )
             }
             else -> {
                 OnboardingFragment.newInstance(
-                    "Spaced \nRepetition !",
-                    "Through our intelligent algorithm which paces your revisions at frequencies proven for maximum retention.",
+                    "How we help you?",
+                    "Our algorithm plans your revisions spaced at intervals proven for maximum retention.",
                     R.drawable.onboard_3,
                     R.color.onboard_3
                 )

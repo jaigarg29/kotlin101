@@ -83,4 +83,10 @@ class ApiHelperImpl @Inject constructor(private val apiService: ApiService) : Ap
     override suspend fun saveSubscription(
         purchase: Purchase
     ) = apiService.saveSubscription(purchase)
+
+    override suspend fun deleteTopic(
+        topicId: Int,
+        token: String?,
+        userId: Int,
+    ) = apiService.deleteTopic(topicId, token, userId)
 }

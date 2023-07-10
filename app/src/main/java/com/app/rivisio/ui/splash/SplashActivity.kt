@@ -62,7 +62,7 @@ class SplashActivity : BaseActivity() {
             when (it) {
                 is NetworkResult.Success -> {
                     hideLoading()
-                    showMessage("Network call is successful")
+//                    showMessage("Network call is successful")
                 }
                 is NetworkResult.Loading -> {
                     showLoading()

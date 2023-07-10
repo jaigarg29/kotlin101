@@ -3,7 +3,7 @@
     <string name="app_description">An App for your Revision Needs</string>
     <string name="home_message">Every big step start with small step. Add your first topic and start your journey!</string>
     <string name="server_client_id">837958413607-ab23q47p5njfgepkhh8np5q8sobiumse.apps.googleusercontent.com</string>
-    <string name="topics_message">Once you create a note and finish it, it will be appeared on this screen. So, let’s start your journey!</string>
+    <string name="topics_message">Add topics using the plus icon below</string>
     <string name="dummy_content">The British Raj was the period of British rule on the Indian subcontinent between 1858 and 1947. The system of governance was instituted in 1858 when the rule of the East India Company was transferred to the Crown in the person of Queen Victoria. The British Raj was the period of British rule on the Indian subcontinent between 1858 and 1947.  .</string>
     <string name="title_notification_reminder">Revise Topics</string>
     <string name="description_notification_reminder">Let us revise the topics!</string>

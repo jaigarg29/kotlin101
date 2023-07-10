@@ -25,9 +25,10 @@
         </com.google.android.material.chip.ChipGroup>
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/edit_topic"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
-            android:visibility="gone"
+            android:visibility="visible"
             app:srcCompat="@drawable/vert_dots" />
 
     </LinearLayout>

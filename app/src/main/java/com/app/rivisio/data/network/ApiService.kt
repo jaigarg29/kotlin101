@@ -115,4 +115,11 @@ interface ApiService {
         @Body purchase: Purchase
     ): Response<JsonElement>
 
+    @PUT("/topics/{topicId}/delete")
+    suspend fun deleteTopic(
+        @Path(TOPIC_ID) topicId: Int,
+        @Query(TOKEN) token: String?,
+        @Query(USER_ID) userId: Int
+    ): Response<JsonElement>
+
 }

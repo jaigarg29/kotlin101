@@ -8,8 +8,8 @@
     android:padding="20dp">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="26dp"
+        android:layout_height="21dp"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/ok" />
 

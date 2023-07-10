@@ -77,10 +77,10 @@ class CalendarFragment : BaseFragment(), TopicsAdapter.Callback {
             init {
                 view.setOnClickListener {
 
-                    if (day.date > LocalDate.now()) {
-                        //don't allow clicks on future dates
-                        return@setOnClickListener
-                    }
+//                    if (day.date > LocalDate.now()) {
+//                        //don't allow clicks on future dates
+//                        return@setOnClickListener
+//                    }
 
                     if (selectedDate != day.date) {
                         val oldDate = selectedDate

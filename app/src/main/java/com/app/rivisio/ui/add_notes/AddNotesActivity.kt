@@ -180,6 +180,7 @@ class AddNotesActivity : BaseActivity(), CreateImageGroupBottomSheetDialog.Callb
         addNotesViewModel.topicAdded.observe(this, Observer {
             when (it) {
                 is NetworkResult.Success -> {
+                    hideLoading()
                     showMessage("Topic Created successfully.")
                     Timber.e("Topic data: ")
 
@@ -269,7 +270,7 @@ class AddNotesActivity : BaseActivity(), CreateImageGroupBottomSheetDialog.Callb
         binding.editNote.setOnClickListener {
 
             var popup: ListPopupWindow? = null
-
+            val context: Context = this
             val adapter = TextNoteOptionsAdapter(arrayListOf("Edit", "Delete"))
             val listener = AdapterView.OnItemClickListener { _, _, position, _ ->
                 if (position == 0) {
@@ -291,7 +292,7 @@ class AddNotesActivity : BaseActivity(), CreateImageGroupBottomSheetDialog.Callb
                 popup?.dismiss()
             }
 
-            popup = getPopupMenu(this@AddNotesActivity, it, adapter, listener, 0, 0)
+            popup = getPopupMenu(context, it, adapter, listener, 0, 0)
 
             popup.show()
 
